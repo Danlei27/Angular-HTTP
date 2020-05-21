@@ -1,0 +1,24 @@
+  PUT http://localhost:3000/cursos HTTP/1.1
+  content-type: application/json
+
+  {
+    "nome":"Java OO"
+  }
+  
+  
+  ###  
+ 
+  POST http://localhost:3000/cursos HTTP/1.1
+  content-type: application/json
+
+  {
+    "nome":"Java"
+  }
+  
+  
+  ###
+
+
+  http://localhost:3000/cursos
+
+  ###
