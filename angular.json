@@ -145,6 +145,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "requests-http"
+    }
+  },
+  "defaultProject": "requests-http",
+  "cli": {
+    "analytics": "e40785bf-04e1-4140-80bc-e9e4a579661c"
+  }
 }
