@@ -1,10 +1,6 @@
 {
   "cursos": [
     {
-      "id": 12,
-      "nome": "Java"
-    },
-    {
       "id": 17,
       "nome": "Angular  material"
     },
