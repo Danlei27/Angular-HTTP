@@ -1,12 +1,13 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { CursosService } from '../cursos.service';
+// import { CursosService } from '../cursos.service';
 import { Curso } from './cursos';
 import { Observable, empty, Subject, EMPTY } from 'rxjs';
 import { catchError, take, switchMap } from 'rxjs/operators';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal/';
-import { AlertModalComponent } from 'src/app/shared/alert-modal/alert-modal.component';
+// import { AlertModalComponent } from 'src/app/shared/alert-modal/alert-modal.component';
 import { AlertModalService } from 'src/app/shared/alert-modal.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { Cursos2Service } from '../cursos2.service';
 
 
 @Component({
@@ -28,7 +29,7 @@ export class CursosListaComponent implements OnInit {
   error$ = new Subject<boolean>();
   cursoSelecionado: Curso;
   
-  constructor(private service: CursosService,
+  constructor(private service: Cursos2Service,
     private modalService: BsModalService,
     private alertService: AlertModalService,
     private router: Router,
