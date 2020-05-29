@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UploadFileService } from '../upload-file.service';
 import { environment } from 'src/environments/environment';
-import { HttpEventType } from '@angular/common/http';
+// import { HttpEventType } from '@angular/common/http';
 import { filterResponse, uploadProgress } from 'src/app/shared/rxjs-operators';
 
 @Component({
@@ -58,6 +58,20 @@ export class UploadFileComponent implements OnInit {
         //   }
         // });
     }
+  }
+
+  onDownloadExcel(){
+    this.service.download(environment.BASE_URL + '/downloadExcel')
+    .subscribe((res: any)=> {
+      this.service.handleFile(res, 'report.xlsx');
+    });
+  }
+
+  onDownloadPDF(){
+    this.service.download(environment.BASE_URL + '/downloadPDF')
+    .subscribe((res: any)=> {
+      this.service.handleFile(res, 'report.pdf');
+    });
   }
 
 }
