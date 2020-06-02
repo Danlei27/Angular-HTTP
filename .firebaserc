@@ -1,5 +1,11 @@
 {
-  "projects": {
-    "default": "angular-danlei"
+  "targets": {
+    "angular-danlei": {
+      "hosting": {
+        "requests-http": [
+          "angular-danlei"
+        ]
+      }
+    }
   }
 }
